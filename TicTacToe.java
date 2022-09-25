@@ -5,12 +5,12 @@ public class TicTacToe{
       int player = 0;   //keeps whose turn it is
       int moveCounter = 0; //keeps track of how many moves have been done
       int xCoor, yCoor; //input variables for coordinate system
-      char[][] board = new char[3][3]; /*       { , , }     0,0   0,1   0,2
-                                                { , , }     1,0   1,1   1,2
-                                                { , , }     2,0   2,1   2,2         */ 
+      char[][] board = new char[3][3]; 
+      
+      
       Scanner sc = new Scanner(System.in); //Scanner used for our input coordiantes 
       
-      for(int s=0;s<=2;s++){     //nested for loop for starting the board with empty _ spaces.
+      for(int s=0;s<=2;s++){     
          for(int t=0;t<=2;t++){
             board[s][t]='_';
          }
